@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   state={number:0}
   onClickAddNumber = ()=>{
-    this.state.number++
-    this.setState({number:this.state.number})
+    let numberAdd1 = this.state.number+1;
+    this.setState({number:numberAdd1})
   }
   onClickMinNumber = ()=>{
-    this.state.number--
-    this.setState({number:this.state.number})
+    let numberMin1 = this.state.number-1;
+    this.setState({number:numberMin1})
   }
   render() {
     return (
